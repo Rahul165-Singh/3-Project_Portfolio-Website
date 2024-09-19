@@ -1,0 +1,187 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins',sans-serif;
+box-sizing: border-box;
+color: #fff;
+}
+ body{
+    background: #080808;
+    color: #fff;
+ }
+ #header{
+     width: 100%;
+     height: 100vh;
+     background-image: url(images/rt.png.jpg);
+     background-size: cover;
+     background-position: center;
+ }
+ .header-text{
+    position: relative;
+    right: 5rem;
+    top: 10rem;
+ }
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#para{
+    width: 50rem;
+}
+
+.logo{
+    width: 140px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0%;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .header-text{
+        margin-top: 20%;
+        font-size: 30%;
+    }
+    .header-text h1{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .header-text h1 span{
+        color: #ff004f;
+    }
+    /*  --------about------------ */
+    #about{
+        padding: 80px 0;
+        color: #ababab;
+        position: relative;
+        bottom: 1rem;
+        right: 7rem;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-col-1{
+        flex-basis: 35%;
+        display: flex;
+        justify-content: center;
+    }
+    .about-col-1 img{
+        width: 100%;
+        border-radius: 2rem;
+        width: 25vw;
+        position: relative;
+        bottom: 27rem;
+        left: 35rem;
+    }
+    .about-col-2{
+        flex-basis: 60%;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 0 40px;
+    }
+    .tab-links{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    .tab-contents ul li span{
+        color: #b54769;
+        font-size: 14px;
+    }
+    .tab-contents{
+        display: none;
+
+    }
+    .tab-contents.active-tab{
+        display: block;
+        
+    }
+    #contact {
+        background-color: #f7f7f7; /* light gray background */
+        padding: 20px; /* add some padding to the section */
+        border: 1px solid #ddd; /* add a border to the section */
+        border-radius: 10px; /* add a rounded corner to the section */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow to the section */
+      }
+      
+      #contact h2 {
+        margin-top: 0; /* remove margin top from the heading */
+        font-weight: bold; /* make the heading bold */
+        color: #333; /* dark gray color for the heading */
+      }
+      
+      #contact ul {
+        list-style: none; /* remove bullet points from the list */
+        padding: 0; /* remove padding from the list */
+        margin: 0; /* remove margin from the list */
+      }
+      
+      #contact li {
+        margin-bottom: 10px; /* add some margin between list items */
+      }
+      
+      #contact i {
+        font-size: 24px; /* increase the font size of the icons */
+        margin-right: 10px; /* add some margin between the icon and the text */
+        color: #666; /* dark gray color for the icons */
+      }
+      
+      #contact a {
+        text-decoration: none; /* remove underline from the links */
+        color: #337ab7; /* blue color for the links */
+      }
+      
+      #contact a:hover {
+        color: #23527c; /* darker blue color on hover */
+      }

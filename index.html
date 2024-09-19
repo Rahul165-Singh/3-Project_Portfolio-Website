@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div id="header">
+        <div class="container">  
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>Rahul singh chouhan</span></h1>
+        </div>
+     </div>
+</div>
+<!-- ---------about---------  -->
+<div id="about">
+    <div class="container">
+        <div class="content">
+            
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <div id="para">
+                <p id="about-para">As a motivated and detail-oriented BCA student, I possess a strong foundation in computer applications and programming languages. With a solid understanding of computer systems, algorithms, and data structures, I am well-equipped to tackle complex problems and develop innovative solutions. My proficiency in programming languages such as Java, Python, and C++ enables me to write efficient and effective code. I am confident in my ability to work collaboratively as part of a team, think critically, and communicate technical information effectively.</p> </div>
+            <div class="tab-titles"></div>
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('school education')">school education</p>
+                <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+           
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>web designer</span><br>desingning web/app interfaces</li>
+                    <li><span>App development</span><br>Building Android/ios apps</li>
+                    <li><span>web development</span><br>web app development</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="school education">
+                <ul>
+                    <li><span>2023 - 2026</span><br>pursueing bca from sunstone education</li>
+                    <li><span>2023</span><br>12th pass out from cbse board</li>
+                    <li><span>web development</span><br>10th pass out from cbse board</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2023</span><br>Take admission in BCA in Sage university,indore</li>
+                </ul>
+
+            </div>
+            <div class="about-col-1">
+                <img src="images/profile-pic (2).png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="contact">
+    <h2>contact</h2>
+    <ul>
+      <li>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+6774567890">+9874567890</a>
+      </li>
+      <li>
+        <i class="fas fa-map-marker-alt"></i>
+        <address>
+          mahidpur,
+          ujjain, mp, 456443
+        </address>
+      </li>
+      <li>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/your_linkedin_profile/" target="_blank">LinkedIn Profile</a>
+      </li>
+      <li>
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/Rahul165-Singh" target="_blank">GitHub Profile</a>
+      </li>
+    </ul>
+  </section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablinks.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontents.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link")
+        }
+
+    </script>
+</body>
+</html>
